@@ -11,20 +11,20 @@
 <body>
     <div class="title">
         <h1>Registro de Libros</h1>
-        <p>Reseñas de libros que has leído</p>
+        <p>Libros que has leído durante este año</p>
     </div>
 
     <div class="form">
         <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
-            <input type="text" id="add-book" placeholder="Libro leído">
+            <input type="text" id="add-todo" placeholder="Libro leído">
             <input type="submit" value="Agregar" class="btn btn-primary">
-            <p>You Have</p>
+            <p>Tú tienes</p>
             <p id="counter"></p>
             <table>
-                <tr class="por-leer">
-                    <th><h3>Por leer</h3></th>
+                <tr class="to-do">
+                    <th><h3>Lista de libros leídos</h3></th>
                 </tr>
-                <tbody id="books">
+                <tbody id="tasks">
                 </tbody>
             </table>
         </form>
@@ -33,7 +33,7 @@
     <div id="edit-box" role="aria-hidden">
         <form action="javascript:void(0);" method="post" id="save-edit">
             <input type="text" id="edit-todo">
-            <input type="submit" value="Guardar" class="btn btn-success">
+            <input type="submit" value="Save" class="btn btn-success">
             <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
         </form>
     </div>
