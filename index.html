@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Registro de Libros</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Registro de Libros</h1>
+        <p>Reseñas de libros que has leído</p>
+    </div>
+
+    <div class="form">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+            <input type="text" id="add-book" placeholder="Libro leído">
+            <input type="submit" value="Agregar" class="btn btn-primary">
+            <p>You Have</p>
+            <p id="counter"></p>
+            <table>
+                <tr class="por-leer">
+                    <th><h3>Por leer</h3></th>
+                </tr>
+                <tbody id="books">
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <div id="edit-box" role="aria-hidden">
+        <form action="javascript:void(0);" method="post" id="save-edit">
+            <input type="text" id="edit-todo">
+            <input type="submit" value="Guardar" class="btn btn-success">
+        </form>
+    </div>
+    <script src="">
+
+    </script>
+
+</body>
+</html>
